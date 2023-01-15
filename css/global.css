@@ -1,3 +1,7 @@
+:root {
+    --primary: #48cfad;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -19,13 +23,4 @@ a {
     padding: 0 1rem;
     box-sizing: border-box;
     margin: 0 auto;
-}
-
-:root {
-    --primary: #48cfad;
-}
-
-html * {
-    background: rgba(255, 0, 0, 0.1);
-    box-shadow: 0 0 0 1px red;
 }
