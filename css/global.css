@@ -1,0 +1,31 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+:root {
+    --primary: #48cfad;
+}
+
+html * {
+    background: rgba(255, 0, 0, 0.1);
+    box-shadow: 0 0 0 1px red;
+}
