@@ -2,6 +2,12 @@
     --primary: #48cfad;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -23,4 +29,109 @@ a {
     padding: 0 1rem;
     box-sizing: border-box;
     margin: 0 auto;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: grid;
+}
+
+.topbar {
+    background-color: var(--primary);
+    padding: 0.8rem 0;
+}
+
+.topbar .social-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-nav ul {
+    display: flex;
+}
+
+.social-nav li {
+    padding: 0 0.5rem;
+}
+
+.social-nav li:first-child {
+    padding-left: 0;
+}
+
+.social-nav li:last-child {
+    padding-right: 0;
+}
+
+.social-nav .icon {
+    color: var(--primary);
+    background-color: #fff;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu.floating {
+    position: absolute;
+    justify-self: center;
+    margin-top: 55px;
+}
+
+.menu .logo {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+.menu .nav-link {
+    font-family: "Roboto Mono", monospace;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.menu .nav-link::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #000000;
+    transition: all 0.3s ease;
+}
+
+.menu .nav-link:hover::after {
+    width: 100%;
+}
+
+.menu.floating .nav-link {
+    color: #fff;
+}
+
+.menu.floating .nav-link::after {
+    background-color: #fff;
+}
+
+footer {
+    background-color: #23282d;
+    padding: 1.5rem 0;
+    border-top: 2rem solid var(--primary);
+}
+
+footer p {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    color: #ffffff;
 }

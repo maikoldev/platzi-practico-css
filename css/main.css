@@ -10,70 +10,6 @@ body {
     color: #fff;
 }
 
-header {
-    display: grid;
-}
-
-.topbar {
-    background-color: var(--primary);
-    padding: 0.8rem 0;
-}
-
-.topbar .social-nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.social-nav ul {
-    display: flex;
-}
-
-.social-nav li {
-    padding: 0 0.5rem;
-}
-
-.social-nav li:first-child {
-    padding-left: 0;
-}
-
-.social-nav li:last-child {
-    padding-right: 0;
-}
-
-.social-nav .icon {
-    color: var(--primary);
-    background-color: #fff;
-    border-radius: 50%;
-    aspect-ratio: 1 / 1;
-    width: 1.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu {
-    padding-top: 3rem;
-    margin-top: 55px;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-self: center;
-}
-
-.menu .logo {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-}
-
-.menu .nav-link {
-    font-family: "Roboto Mono", monospace;
-    color: #fff;
-    font-size: 1.3rem;
-    border-bottom: 1px solid;
-}
-
 main {
     height: 100%;
     display: grid;
@@ -91,6 +27,7 @@ main .title {
     font-family: "Roboto Mono", monospace;
     font-size: 3.5rem;
     text-align: center;
+    margin: 3rem 0 1.5rem 0;
 }
 
 main button {
